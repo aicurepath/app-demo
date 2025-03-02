@@ -4,7 +4,7 @@ import { useAppointments } from '../hooks/useAppointments';
 import { useAuth } from '../hooks/useAuth';
 import { Appointment } from '../types/appointment';
 import BackButton from '../components/shared/BackButton';
-import { VideoIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { VideoCameraIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
 export default function AppointmentsListPage() {
   const navigate = useNavigate();
@@ -111,7 +111,7 @@ export default function AppointmentsListPage() {
                       </h3>
                       <div className="flex items-center text-sm text-gray-500">
                         {appointment.type === 'video' ? (
-                          <VideoIcon className="w-4 h-4 mr-1" />
+                          <VideoCameraIcon className="w-4 h-4 mr-1" />
                         ) : (
                           <MapPinIcon className="w-4 h-4 mr-1" />
                         )}

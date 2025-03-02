@@ -4,7 +4,7 @@ import { useAppointments } from '../hooks/useAppointments';
 import { useAuth } from '../hooks/useAuth';
 import BackButton from '../components/shared/BackButton';
 import { showError } from '../components/notifications/toast';
-import { VideoIcon, PhoneIcon, CalendarIcon, MapPinIcon, CurrencyDollarIcon, ClockIcon } from '@heroicons/react/24/outline';
+import { VideoCameraIcon, PhoneIcon, CalendarIcon, MapPinIcon, CurrencyDollarIcon, ClockIcon } from '@heroicons/react/24/outline';
 
 export default function AppointmentDetailPage() {
   const { id } = useParams();
@@ -148,7 +148,7 @@ export default function AppointmentDetailPage() {
             
             <div className="flex items-center space-x-3">
               {appointment.type === 'video' ? (
-                <VideoIcon className="w-5 h-5 text-gray-500" />
+                <VideoCameraIcon className="w-5 h-5 text-gray-500" />
               ) : (
                 <MapPinIcon className="w-5 h-5 text-gray-500" />
               )}
@@ -191,7 +191,7 @@ export default function AppointmentDetailPage() {
                 onClick={handleStartVideo}
                 className="w-full flex items-center justify-center space-x-2 bg-primary-500 text-white py-3 px-4 rounded-xl hover:bg-primary-600 font-medium"
               >
-                <VideoIcon className="w-5 h-5" />
+                <VideoCameraIcon className="w-5 h-5" />
                 <span>Start Video Call</span>
               </button>
             )}

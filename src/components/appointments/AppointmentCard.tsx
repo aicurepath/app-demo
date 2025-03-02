@@ -1,9 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Appointment } from '../../types/appointment';
-import { VideoIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { VideoCameraIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
-interface AppointmentCardProps {
-  appointment ```
 interface AppointmentCardProps {
   appointment: Appointment;
   isPractitioner?: boolean;
@@ -48,7 +46,7 @@ export default function AppointmentCard({ appointment, isPractitioner = false }:
             </h3>
             <div className="flex items-center text-sm text-gray-500">
               {appointment.type === 'video' ? (
-                <VideoIcon className="w-4 h-4 mr-1" />
+                <VideoCameraIcon className="w-4 h-4 mr-1" />
               ) : (
                 <MapPinIcon className="w-4 h-4 mr-1" />
               )}
@@ -72,6 +70,4 @@ export default function AppointmentCard({ appointment, isPractitioner = false }:
       </div>
     </div>
   );
-}
-```
 }
