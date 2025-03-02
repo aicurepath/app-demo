@@ -1,0 +1,6 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Chat with AI" />
+    <StackLayout class="p-4">
+        <Label text="Chat feature coming soon..." class="text-lg text-center"/>
+    </StackLayout>
+</Page>

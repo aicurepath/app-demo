@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout class="p-4">
+    <Label text="{{ plan.title }}" class="text-xl font-bold"/>
+    <Label text="{{ plan.description }}" class="text-gray-600"/>
+    <StackLayout class="mt-4">
+        <Label text="Recipes" class="font-semibold"/>
+        <ListView items="{{ plan.recipes }}" height="100">
+            <ListView.itemTemplate>
+                <Label text="{{ $value }}" class="p-2"/>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+    <StackLayout class="mt-4">
+        <Label text="Therapies" class="font-semibold"/>
+        <ListView items="{{ plan.therapies }}" height="100">
+            <ListView.itemTemplate>
+                <Label text="{{ $value }}" class="p-2"/>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</StackLayout>

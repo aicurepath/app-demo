@@ -1,0 +1,4 @@
+<StackLayout class="bg-white p-4 rounded-lg shadow-md" tap="{{ onTap }}">
+    <Label text="{{ icon }}" class="text-2xl text-center"/>
+    <Label text="{{ title }}" class="text-center font-semibold"/>
+</StackLayout>

@@ -1,0 +1,5 @@
+<Frame defaultPage="views/home/home-page">
+  <Frame.actionBar>
+    <ActionBar title="aiCurePath" />
+  </Frame.actionBar>
+</Frame>

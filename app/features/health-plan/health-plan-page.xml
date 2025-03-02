@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Health Plan">
+        <NavigationButton visibility="visible" tap="onBackTap" android.systemIcon="ic_menu_back"/>
+    </ActionBar>
+    <ScrollView>
+        <StackLayout class="p-4">
+            <PlanSummary plan="{{ healthPlan }}"/>
+        </StackLayout>
+    </ScrollView>
+</Page>

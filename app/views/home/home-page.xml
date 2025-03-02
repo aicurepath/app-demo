@@ -1,0 +1,34 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <GridLayout rows="*" columns="*">
+        <ScrollView>
+            <StackLayout class="p-4 space-y-4">
+                <!-- Health Score Section -->
+                <CardView>
+                    <ScoreDisplay />
+                </CardView>
+
+                <!-- Quick Actions -->
+                <GridLayout rows="auto" columns="*, *" class="gap-4">
+                    <ActionTile col="0" 
+                        icon="💬" 
+                        title="Chat with AI"
+                        tap="{{ onChatTap }}" />
+                    <ActionTile col="1" 
+                        icon="👨‍⚕️" 
+                        title="Find Practitioner"
+                        tap="{{ onFindPractitioner }}" />
+                </GridLayout>
+
+                <!-- Health Plan -->
+                <CardView>
+                    <StackLayout>
+                        <Label text="Your Health Plan" class="text-xl font-bold mb-2"/>
+                        <Button text="View Plan" 
+                            tap="{{ onViewHealthPlan }}" 
+                            class="bg-green-500 text-white p-2 rounded-lg"/>
+                    </StackLayout>
+                </CardView>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>

@@ -1,0 +1,5 @@
+<StackLayout>
+    <Label text="Health Score" class="text-xl font-bold mb-2"/>
+    <Label text="{{ score }}" class="text-3xl text-center"/>
+    <Button text="Take Health Assessment" tap="{{ onAssessment }}" class="bg-blue-500 text-white p-2 rounded-lg mt-2"/>
+</StackLayout>
